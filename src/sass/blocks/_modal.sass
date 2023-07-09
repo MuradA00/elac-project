@@ -1,0 +1,82 @@
+/*modal*/
+.modal-log
+ position: fixed
+ z-index: 11
+ left: 0
+ top: 0
+ width: 100%
+ height: 100%
+ background: #FFFFFF
+ opacity: 0.95
+ display: none
+.modal-log_wrap
+ display: flex 
+ justify-content: center
+ align-items: center
+ width: 100%
+ height: 100%
+.modal-log_form
+ width: 470px
+.modal-contacts
+ position: fixed
+ z-index: 11
+ left: 0
+ top: 0
+ width: 100%
+ height: 100%
+ background: #FFFFFF
+ opacity: 0.95
+ display: none
+.modal-contacts_wrap
+ display: flex 
+ justify-content: center
+ align-items: center
+ width: 100%
+ height: 100%
+.modal-contacts_box
+ display: grid
+ grid-template-columns: 1fr 1fr
+ grid-column-gap: 40px
+ width: 100%
+ max-width: 1190px
+ padding: 0 15px
+.modal-contacts_img
+ display: flex
+ justify-content: center
+ align-items: center
+ height: 460px
+ img
+  width: 100%
+  height: 100%
+  object-fit: cover
+.modal-contacts_text
+ display: flex
+ flex-direction: column
+ justify-content: center
+.modal-contacts_contact
+ font-size: 17px
+ line-height: 23px
+ margin-top: 30px
+ a
+  color: #DEA827
+@media (max-width: 1200px)
+ .modal-contacts_box
+  display: block
+  max-width: 800px
+ .modal-contacts_img
+  margin-bottom: 30px
+  width: 100%
+  height: 370px
+@media (max-width: 800px)
+ .modal-log_form
+  width: 100%
+  padding: 0px 15px
+ .modal-contacts_box
+  max-width: 500px
+ .modal-contacts_img
+  height: 210px
+  margin-bottom: 20px
+@media (min-width: 1200px)
+ .modal-contacts_contact a:hover
+  color: #B91C3B
+/*-modal*/

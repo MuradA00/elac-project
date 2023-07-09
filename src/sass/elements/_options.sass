@@ -1,0 +1,268 @@
+/*options*/
+*, ::after, ::before
+ box-sizing: border-box
+body
+ font-family: 'NeoSans', sans-serif
+ font-weight: 400
+ line-height: normal
+ color: #707070
+ background: #FFFFFF
+ margin: 0px
+ padding: 0px
+ overflow-x: hidden
+body::-webkit-scrollbar
+ width: 7px
+body::-webkit-scrollbar-thumb
+ background: #B91C3B
+ border-radius: 5px
+body::-webkit-scrollbar-track
+ background: tranpsparent
+p
+ width: 100%
+ margin: 0px
+h1, h2, h3, h4, h5
+ width: 100%
+ margin: 0px
+img
+ max-width: 100%
+ul, ol
+ padding: 0px
+ margin: 0px
+li
+ list-style-type: none
+a
+ outline: none
+ text-decoration: none
+a:hover
+ text-decoration: none
+ outline: none
+select
+ opacity: 1
+ border-radius: 0
+ font-family: 'NeoSans', sans-serif
+ -webkit-appearance: none
+ -moz-appearance: none
+ text-indent: 1px
+ text-overflow: ''
+ &:hover,
+ &:focus
+  outline: none
+  text-decoration: none
+textarea
+ font-family: 'NeoSans', sans-serif
+ resize: none
+ -webkit-appearance: none
+ -moz-appearance: none
+ appearance: none
+ opacity: 1
+ resize: none
+ border-radius: 0
+ &::-webkit-input-placeholder
+  color: #707070
+ &::-moz-placeholder
+  color: #707070
+ &:-ms-input-placeholder
+  color: #707070
+ &:-moz-placeholder
+  color: #707070
+ &:hover,
+ &:focus
+  outline: none
+  text-decoration: none
+input
+ font-family: 'NeoSans', sans-serif
+ -webkit-appearance: none
+ -moz-appearance: none
+ appearance: none
+ opacity: 1
+ border-radius: 0
+ &::-webkit-input-placeholder
+  color: #707070
+ &::-moz-placeholder
+  color: #707070
+ &:-ms-input-placeholder
+  color: #707070
+ &:-moz-placeholder
+  color: #707070
+ &:hover,
+ &:focus
+  outline: none
+  text-decoration: none
+button
+ font-family: 'NeoSans', sans-serif
+ font-weight: 500
+ cursor: pointer
+ border: none
+ background: none
+ padding: 0px
+ &:hover,
+ &:focus
+  outline: none
+  text-decoration: none
+html,
+body
+ height: 100%
+.container
+ height: 100%
+ width: 100%
+ max-width: 1190px
+ padding: 0 15px
+ margin: 0 auto
+.wrapper
+ display: flex
+ flex-direction: column
+ min-height: 100%
+ overflow: hidden
+ width: 100%
+ padding-top: 150px
+.wrapper-bgr
+ position: absolute
+ left: 0
+ top: 0
+ width: 100%
+ height: 250px
+ overflow: hidden
+ .container
+  position: relative
+  &:before
+   content: ''
+   position: absolute
+   z-index: -1
+   left: calc(100% - 350px)
+   top: 0
+   width: 2000px
+   height: 100%
+   background: #B91C3B
+main
+ flex: 1 0 auto
+footer
+ flex: 0 0 auto
+.section
+ margin-bottom: 150px
+.section-top
+ position: relative
+ max-width: 510px
+ margin-bottom: 50px
+.section-top.two
+ padding-left: 130px
+ img
+  position: absolute
+  left: 0
+  top: 50%
+  transform: translateY(-50%)
+  max-height: 90px
+.section-sub
+ display: block
+ color: #DEA827
+ font-size: 22px
+ line-height: 38px
+ font-weight: 500
+ margin-bottom: 10px
+.section-descr
+ margin-top: 35px
+.wrapper-buttons
+ position: fixed
+ z-index: 12
+ left: 0
+ top: 200px
+ display: flex
+ flex-direction: column
+ align-items: flex-start
+ justify-content: flex-start
+.wrapper-buttons.active
+ z-index: 9
+.wrapper-buttons_point
+ display: flex
+ justify-content: center
+ align-items: center
+ width: 67px
+ height: 67px
+ background: #B91C3B
+ border-bottom: 2px solid #FFFFFF
+ cursor: pointer
+ svg
+  stroke: #FFFFFF
+ a
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 100%
+  height: 100%
+.wrapper-buttons_point.active
+ background: #FFFFFF
+ svg
+  stroke: #B91C3B
+@media (max-width: 1200px)
+ .container
+  max-width: 800px
+ .wrapper
+  padding-top: 90px
+ .section-top
+  max-width: 100%
+ .wrapper-buttons
+  top: 150px
+ .wrapper-bgr
+  .container:before
+   left: 50%
+@media (max-width: 800px)
+ .section
+  margin-bottom: 100px
+ .container
+  max-width: 500px
+ .wrapper
+  padding-top: 110px
+ .section-sub
+  font-size: 20px
+  line-height: 28px
+ .section-descr
+  margin-top: 30px
+ .wrapper-bgr
+  height: 80px
+ .section-top.two
+  padding-left: 0px
+  img
+   position: static
+   transform: translate(0)
+   margin-bottom: 20px
+@media (max-width: 800px)
+ .wrapper
+  padding-bottom: 70px
+ .wrapper-buttons
+  bottom: 0
+  top: auto
+  display: grid
+  width: 100%
+  grid-template-columns: 1fr 1fr 1fr
+  grid-gap: 2px
+
+  background-color: rgba(112, 112, 112, .5)
+
+  transition: all 300ms ease
+
+  transform: translateY(100%) !important
+
+  li 
+    width: 100%
+    height: 140px
+
+    border-bottom: none    
+
+    background: var(--r-clr)   
+
+    svg 
+      transform: scale(1.5)
+
+ 
+  .wrapper-buttons_point
+    transform: translate(0)
+
+
+@media (min-width: 1200px)
+ .wrapper-buttons_point:hover
+  background: #DEA827
+  svg
+   stroke: #FFFFFF
+/*-options*/
+
+.wrapper-buttons.show 
+  transform: translateY(0)

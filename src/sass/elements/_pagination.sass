@@ -1,0 +1,36 @@
+.pagination 
+    display: flex
+    align-items: center
+    grid-gap: 10px
+    flex-wrap: wrap
+    &-item 
+        display: flex
+        align-items: center
+        justify-content: center
+
+        .active 
+            background: var(--r-clr)
+
+            border: 1px solid var(--r-clr)
+ 
+            span 
+                color: #fff
+        &__btn 
+            padding: 10px 16px
+
+            border-radius: 8px
+
+            border: 1px solid var(--gr-clr)
+
+            aspect-ratio: 1 / 1
+
+            transition: 200ms ease
+
+            &:not(.pagination-item .active):hover 
+                background-color: rgba(0,0,0, .1)                
+            span 
+                font-size: 17px
+                font-weight: 500
+
+                color: var(--gr-clr)
+

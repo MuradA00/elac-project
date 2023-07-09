@@ -1,0 +1,229 @@
+/*news*/
+.news
+ .section-top
+  max-width: 100%
+.news-item
+ display: flex
+ justify-content: space-between
+.news-item_img
+ display: flex
+ justify-content: center
+ align-items: center
+ width: 240px
+ height: 190px
+ overflow: hidden
+ img
+  width: 100%
+  height: 100%
+  object-fit: cover
+  transition: 0.3s
+.news-item_text
+ width: calc(100% - 280px)
+.news-item_title
+ display: -webkit-box
+ -webkit-line-clamp: 1
+ -webkit-box-orient: vertical
+ height: 27px
+ overflow: hidden
+ transition: 0.15s
+.news-item_info
+ display: flex
+ align-items: center
+ margin-top: 5px
+ li
+  display: flex
+  align-items: center
+  font-size: 15px
+  color: #DEA827
+ li:after
+  content: '|'
+  font-size: 15px
+  color: #DEA827
+  margin: 0px 5px
+ li:last-child:after
+  display: none
+.news-item_descr
+ display: -webkit-box
+ -webkit-line-clamp: 4
+ -webkit-box-orient: vertical
+ height: 94px
+ overflow: hidden
+ margin-top: 15px
+.news-item_btn
+ margin: 10px 0px 0px auto
+.news-wrap
+ display: grid
+ grid-template-columns: 1fr 1fr 1fr
+ grid-column-gap: 40px
+.news-list_point
+ margin-bottom: 40px
+ padding-bottom: 40px
+ border-bottom: 1px solid #707070
+.news-list_point:last-child
+ padding-bottom: 0px
+ margin-bottom: 0px
+ border: none
+.news-aside
+ grid-column-start: 3
+ grid-column-end: 5
+.news-aside_title
+ margin-bottom: 20px
+.news-tags_list
+ display: flex
+ flex-wrap: wrap
+ li
+  margin-right: 5px
+  margin-bottom: 5px
+ a
+  font-weight: 500
+  font-size: 17px
+  line-height: 23px
+  color: #DEA827
+.news-relevant
+ width: 100%
+ padding: 30px
+ margin-top: 40px
+ background: #FFFFFF
+ box-shadow: 3px 3px 14px #00000029
+ border-radius: 20px
+.news-relevant_point
+ padding-bottom: 30px
+ margin-bottom: 30px
+ border-bottom: 1px solid #707070
+.news-relevant_point:last-child
+ padding-bottom: 0px
+ margin-bottom: 0px
+ border: none
+.news-relevant_link
+ display: block
+ width: 100%
+.news-relevant_title
+ display: -webkit-box
+ -webkit-line-clamp: 1
+ -webkit-box-orient: vertical
+ height: 21px
+ overflow: hidden
+.news-relevant_descr
+ display: -webkit-box
+ -webkit-line-clamp: 2
+ -webkit-box-orient: vertical
+ height: 45px
+ overflow: hidden
+ margin-top: 15px
+.news-img
+ display: flex
+ justify-content: center
+ align-items: center
+ height: 400px
+ width: 733.33px
+ margin-bottom: 40px
+ img
+  width: 100%
+  height: 100%
+  object-fit: cover
+.news-content
+ grid-column-start: 1
+ grid-column-end: 3
+.news-text
+ margin-bottom: 40px
+.news-search
+ display: flex
+ align-items: center
+ margin-bottom: 40px
+ padding-bottom: 40px
+ border-bottom: 1px solid #707070
+ li
+  margin-right: 25px
+ li:last-child
+  margin-right: 0px
+ img
+  width: 35px
+  height: 35px
+  transition: 0.2s
+.news-category
+ display: flex
+ flex-wrap: wrap
+ margin-bottom: 40px
+ padding-bottom: 35px
+ border-bottom: 1px solid #707070
+ li
+  margin: 0px 5px 5px 0px
+ a
+  font-size: 17px
+  line-height: 23px
+  font-weight: 500
+  color: #DEA827
+.news-comments_top
+ margin-bottom: 40px
+.news-comments_descr
+ margin-top: 20px
+.news-comments_form
+ display: flex
+ flex-wrap: wrap
+ justify-content: space-between
+ .news-comments_input
+  width: 48%
+@media (max-width: 1200px)
+ .news-wrap
+  display: block
+ .news-content
+  margin-bottom: 100px
+ .news-img
+  width: 100%
+  height: 370px
+@media (max-width: 800px)
+ .news-item
+  display: block
+ .news-item_img
+  width: 100%
+  height: 190px
+ .news-item_text
+  width: 100%
+ .news-item_title
+  margin-top: 20px
+ .news-item_descr
+  -webkit-line-clamp: 3
+  height: auto
+  max-height: 69px
+ .news-list_point
+  margin-bottom: 30px
+  padding-bottom: 30px
+ .news-relevant
+  padding: 20px
+  margin-top: 30px
+ .news-relevant_point
+  padding-bottom: 20px
+  margin-bottom: 20px
+ .news-img
+  height: 210px
+  margin-bottom: 20px
+ .news-text
+  margin-bottom: 30px
+ .news-search
+  margin-bottom: 30px
+  padding-bottom: 30px
+ .news-category
+  padding-bottom: 25px
+  margin-bottom: 30px
+ .news-comments_form
+  .news-comments_input
+   width: 100%
+@media (max-width: 500px)
+ .news-img
+  position: relative
+  left: -15px
+  width: calc(100% + 30px)
+@media (min-width: 1200px)
+ .news-item_img:hover img
+  transform: scale(1.05)
+ .news-item_title:hover
+  color: #B91C3B
+ .news-tags_list a:hover
+  color: #B91C3B
+ .news-relevant_link:hover .news-relevant_title
+  color: #B91C3B
+ .news-search img:hover
+  transform: scale(1.05)
+ .news-category a:hover
+  color: #B91C3B
+/*-news*/

@@ -1,0 +1,132 @@
+/*our*/
+.our
+ .container
+  position: relative
+.our-bgr
+ content: ''
+ position: absolute
+ z-index: -1
+ bottom: 0
+ left: calc(100% - 685px)
+ height: 170px
+ width: 2000px
+ background: #B91C3B
+.our-wrap
+ display: flex
+ align-items: center
+ justify-content: space-between
+ margin-bottom: 50px
+.our-img
+ display: flex
+ justify-content: center
+ align-items: center
+ height: 520px
+ width: calc(50% - 40px)
+ img
+  width: 100%
+  height: 100%
+  object-fit: cover
+.our-text
+ width: 50%
+.our-list
+ display: grid
+ grid-template-columns: 1fr 1fr 1fr 1fr
+ grid-column-gap: 63px
+ grid-row-gap: 53px
+ overflow: hidden
+.our-list_point
+ position: relative
+ &::before
+  content: ''
+  position: absolute
+  left: -33px
+  top: 0
+  width: 3px
+  height: 100%
+  background: #B91C3B
+.our-list_img
+ display: flex
+ justify-content: center
+ align-items: flex-start
+ height: 140px
+ img
+  max-height: 110px
+.our-list_title
+ display: -webkit-box
+ -webkit-line-clamp: 2
+ -webkit-box-orient: vertical
+ height: 54px
+ overflow: hidden
+.our-list_descr
+ display: -webkit-box
+ -webkit-line-clamp: 4
+ -webkit-box-orient: vertical
+ height: 89px
+ overflow: hidden
+ margin-top: 15px
+.our-list_link
+ margin: 35px 0px 0px auto
+.our-bottom
+ margin-top: 70px
+ padding: 70px 0px 70px 50%
+@media (max-width: 1200px)
+ .our-bgr
+  height: 61px
+  left: calc(100% - 490px)
+ .our-wrap
+  display: block
+ .our-img
+  width: 100%
+  height: 370px
+  margin-bottom: 30px
+ .our-text 
+  width: 100%
+ .our-list
+  display: grid
+  grid-template-columns: 1fr 1fr
+ .our-bottom
+  display: flex 
+  justify-content: flex-end
+  padding: 20px 0px
+  margin-top: 30px
+@media (max-width: 800px)
+ .our-bgr
+  left: 20% 
+  height: 78px
+ .our-img
+  height: 210px
+  margin-bottom: 15px
+ .our-list
+  grid-template-columns: 1fr
+  padding: 50px 20px
+  grid-column-gap: 0px
+  grid-row-gap: 0px 
+ .our-list_point 
+  padding-bottom: 53px 
+  margin-bottom: 50px
+  border-bottom: 3px solid #B91C3B
+ .our-list_point:last-child 
+  padding-bottom: 0px
+  margin-bottom: 0px
+  border: none
+ .our-list_title
+  height: auto
+  max-height: 51px
+ .our-list_descr
+  height: auto
+  max-height: 89px
+ .our-list_img
+  height: 130px
+ .our-bottom 
+  height: 78px
+  align-items: center
+  padding: 0px
+  margin-top: 0px
+ .our-link
+  max-width: 200px
+@media (max-width: 500px)
+ .our-img 
+  position: relative
+  left: -15px
+  width: calc(100% + 30px)
+/*-our*/

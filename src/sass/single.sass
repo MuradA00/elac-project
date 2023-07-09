@@ -1,0 +1,85 @@
+.single 
+    --info-px: 52px
+    &__image 
+        width: 100%
+        height: 100%
+
+        display: flex
+        align-items: flex-end
+
+        background-size: cover
+        background-repeat: no-repeat
+        
+        position: relative
+        &-header 
+            margin-bottom: 22px
+        &-date 
+            color: #dea827
+
+            font-size: 22px
+            font-weight: 500
+
+            margin-bottom: 4px
+        &-title 
+            font-size: 36px
+            font-weight: 500
+
+            color: #fff
+        &-info 
+            position: relative
+        
+            padding: 46px var(--info-px)
+
+            max-width: calc(482px + (var(--info-px) * 2))
+
+            a 
+                font-weight: 500
+
+                color: #fff
+            p 
+                color: #fff
+                font-weight: 400 
+
+        &::before
+            content: ''
+            position: absolute
+
+            top: 0
+            left: 0
+
+            width: 100%
+            height: 100%
+
+            background-image: linear-gradient(to top, rgba(0, 0, 0, .7), transparent 100%)
+    &-body
+        &__row 
+            grid-template-columns: 0.385fr 0.615fr
+
+.single .actual-content__col-banner
+    height: 100%
+
+@media only screen and (min-width: 1200px) 
+    .single > .container             
+        max-width: calc(1300px + (15px * 2))            
+
+@media only screen and (max-width: 1200px)
+    .single 
+        --info-px: 26px
+        &__image
+            height: 384px 
+            &-title 
+                font-size: 28px
+        &-body 
+            &__row 
+                display: flex
+                flex-direction: column-reverse
+        &__image 
+            &-info 
+                padding: 32px var(--info-px)     
+
+@media only screen and (max-width: 550px)
+    .single 
+        --info-px: 18px
+        &__image 
+            &-info 
+                padding: 26px var(--info-px)                

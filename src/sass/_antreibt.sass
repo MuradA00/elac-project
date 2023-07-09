@@ -1,0 +1,496 @@
+/*antreibt*/
+.antreibt
+ .section-top
+  max-width: 100%
+.antreibt-img
+ display: flex
+ justify-content: center
+ align-items: center
+ height: 325px
+ width: calc(100% - 135px)
+ margin-left: auto
+ margin-bottom: 40px
+ img
+  width: 100%
+  height: 100%
+  object-fit: cover
+.antreibt-content
+ width: 733.33px
+.antreibt-boxs
+ position: relative
+ display: flex
+ flex-wrap: wrap
+ justify-content: space-between
+.antreibt-boxs_point
+ position: relative
+ display: flex
+ width: 520px
+ min-height: 360px
+ padding: 30px
+ background: #FFFFFF
+ box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.160784)
+ border-radius: 20px
+ margin-bottom: 90px
+ &:after
+  content: ''
+  position: absolute
+  right: -60px
+  top: 50%
+  transform: translateY(-50%)
+  width: 40px
+  height: 3px
+  background: #D5D5D5
+ &::before
+  content: ''
+  position: absolute
+  right: -60px
+  top: 50%
+  width: 3px
+  height: calc(50% + 46px)
+  background: #D5D5D5
+.antreibt-boxs_point:last-child
+ margin-bottom: 0px
+ &::before
+  display: none
+.antreibt-boxs_point:nth-child(even)
+ position: relative
+ top: 230px
+ &::after
+  right: auto
+  left: -60px
+ &::before
+  right: auto
+  left: -63px
+  top: calc(50% - 7px)
+.antreibt-boxs_title
+ color: #DEA827
+.antreibt-boxs_descr
+ margin-top: 40px
+.antreibt-boxs_img
+ display: flex
+ justify-content: center
+ align-items: center
+ width: 230px
+ min-width: 230px
+ height: 230px
+ margin-left: 30px
+ img
+  width: 100%
+  height: 100%
+  object-fit: cover
+.antreibt-team
+ display: grid
+ grid-template-columns: 1fr 1fr 1fr
+ grid-column-gap: 40px
+ grid-row-gap: 40px
+.antreibt-team_point
+ width: 100%
+ padding: 30px
+ background: #FFFFFF
+ box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.160784)
+ border-radius: 20px
+.antreibt-team_img
+ display: flex
+ justify-content: center
+ align-items: center
+ height: 190px
+ margin-bottom: 20px
+ img
+  width: 100%
+  height: 100%
+  object-fit: cover
+.antreibt-team_position
+ display: block
+ font-size: 17px
+ font-weight: 500
+ color: #DEA827
+ margin-top: 10px
+.antreibt-team_descr
+ margin-top: 20px
+.antreibt-list
+ position: relative
+ display: grid
+ grid-template-columns: 1fr 1fr 1fr
+ grid-column-gap: 15px
+ grid-row-gap: 15px
+ padding-bottom: 45px
+ &:before
+  content: ''
+  position: absolute
+  z-index: -1
+  bottom: 0
+  left: calc(100% - 700px)
+  height: 420px
+  width: 2000px
+  background: #B91C3B
+.antreibt-list_point
+ padding: 30px
+ background: #FFFFFF
+ box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.160784)
+ border-radius: 20px
+.antreibt-list_img
+ display: flex
+ justify-content: flex-start
+ align-items: center
+ height: 80px
+ img
+  max-height: 100%
+.antreibt-list_title
+ margin-top: 30px
+.antreibt-list_descr
+ margin-top: 40px
+.antreibt-contacts
+ display: grid
+ grid-template-columns: 1fr 1fr
+ grid-column-gap: 40px
+.antreibt-contacts_img
+ display: flex
+ justify-content: center
+ align-items: center
+ height: 460px
+ img
+  width: 100%
+  height: 100%
+  object-fit: cover
+.antreibt-contacts_text
+ display: flex
+ flex-direction: column
+ justify-content: center
+.antreibt-contacts_contact
+ font-size: 17px
+ line-height: 23px
+ margin-top: 30px
+ a
+  color: #DEA827
+.antreibt-map
+ position: relative
+.antreibt-map_wrap
+ display: flex
+ justify-content: center
+ align-items: center
+ width: 100%
+ height: 480px
+ img
+  width: 100%
+  height: 100%
+  object-fit: cover
+.antreibt-search
+ position: absolute
+ left: 30px
+ top: 30px
+ width: 330px
+.antreibt-tabs
+ padding: 20px
+ background: #F7F7F7
+ margin-top: 20px
+.antreibt-tabs_list
+ display: grid
+ grid-template-columns: 1fr 1fr 1fr 1fr
+ grid-column-gap: 15px
+ grid-row-gap: 15px
+ margin-top: 10px
+.antreibt-tabs_select
+ position: relative
+ &:after
+  content: ''
+  position: absolute
+  z-index: 2
+  right: 10px
+  top: 50%
+  transform: translateY(-50%)
+  width: 24px
+  height: 24px
+  background: url('../icons/elements/arrow-1.svg') center no-repeat
+  background-size: contain
+.antreibt-tabs_option
+ display: block
+ width: 100%
+ font-size: 17px
+ color: #FFFFFF
+ padding: 15px 35px 15px 20px
+ background: #DEA827
+ border: none
+.antreibt-tabs_label
+ position: relative
+ cursor: pointer
+.antreibt-tabs_name
+ display: block
+ width: 100%
+ font-size: 17px
+ color: #FFFFFF
+ padding: 15px 20px
+ background: #DEA827
+.antreibt-tabs_input
+ position: absolute
+ z-index: -1
+ padding: 0px
+ margin: 0px
+ border: none
+.antreibt-tabs_input:checked + .antreibt-tabs_name
+ background: #707070
+.antreibt-adress
+ margin-top: 40px
+.antreibt-adress_point
+ position: relative
+ width: 100%
+ padding: 20px
+ background: #FFFFFF
+ border: 1px solid #707070
+ margin-bottom: 20px
+.antreibt-adress_point:last-child
+ margin-bottom: 0px
+.antreibt-adress_title
+ width: calc(100% - 200px)
+.antreibt-adress_list
+ margin-top: 20px
+ li
+  margin-bottom: 3px
+ li:last-child
+  margin-bottom: 0px
+ a
+  color: #707070
+  font-size: 17px
+  line-height: 23px
+.antreibt-adress_date
+ position: absolute
+ right: 20px
+ top: 20px
+ color: #FFFFFF
+ font-size: 17px
+ padding: 5px 20px
+ background: #DEA827
+.antreibt-info
+ width: 100%
+ padding: 30px
+ background: #FFFFFF
+ box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.160784)
+ border-radius: 20px
+ margin-bottom: 40px
+ li
+  font-size: 17px
+  line-height: 23px
+  color: #707070
+  margin-bottom: 15px
+ li:last-child
+  margin-bottom: 0px
+ a
+  color: #DEA827
+.antreibt-center
+ margin-top: 40px
+ padding: 30px
+ background: #F7F7F7
+.antreibt-center_descr
+ margin-top: 20px
+ a
+  color: #DEA827
+.antreibt-logos
+ display: grid
+ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr
+ grid-column-gap: 15px
+ grid-row-gap: 15px
+.antreibt-logos_point
+ display: flex
+ justify-content: center
+ align-items: center
+ width: 180px
+ height: 180px
+ border-radius: 50%
+ background: #FFFFFF
+ box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.141176)
+ img
+  max-width: 90px
+  max-height: 90px
+.antreibt-people
+ display: grid
+ grid-template-columns: 1fr 1fr
+ grid-column-gap: 20px
+ grid-row-gap: 20px
+ margin-top: 40px
+.antreibt-people_point
+ display: flex
+ align-items: center
+ padding: 20px
+ background: #FFFFFF
+ border: 1px solid #707070
+.antreibt-people_img
+ display: flex
+ justify-content: center
+ align-items: center
+ width: 95px
+ min-width: 95px
+ height: 95px
+ border-radius: 50%
+ overflow: hidden
+ margin-right: 30px
+ img
+  width: 100%
+  height: 100%
+  object-fit: cover
+.antreibt-people_list
+ margin-top: 20px
+ li
+  margin-bottom: 3px
+ li:last-child
+  margin-bottom: 0px
+ a
+  color: #707070
+  font-size: 17px
+@media (max-width: 1200px)
+ .antreibt-content
+  width: 100%
+ .antreibt-img
+  width: 100%
+  height: 370px
+ .antreibt-boxs
+  display: block
+ .antreibt-boxs:after
+  display: none
+ .antreibt-boxs_point
+  width: 100%
+  min-height: 100%
+  &::after
+   right: auto
+   left: 50%
+   top: 100%
+   transform: translate(-50%)
+   width: 3px
+   height: 90px
+  &::before
+   display: none
+ .antreibt-boxs_point:nth-child(even)
+  top: auto
+  &::after
+   left: 50%
+ .antreibt-boxs_point:last-child:after
+  display: none
+ .antreibt-team
+  grid-template-columns: 1fr 1fr
+  grid-column-gap: 30px
+  grid-row-gap: 30px
+ .antreibt-list
+  grid-template-columns: 1fr 1fr
+  &:before
+   left: calc(100% - 490px)
+ .antreibt-contacts
+  display: block
+ .antreibt-contacts_img
+  margin-bottom: 30px
+  width: 100%
+  height: 370px
+ .antreibt-tabs_list
+  grid-template-columns: 1fr 1fr
+ .antreibt-logos
+  grid-template-columns: 1fr 1fr 1fr 1fr
+@media (max-width: 800px)
+ .antreibt-img
+  height: 210px
+  margin-bottom: 20px
+ .antreibt-boxs_point
+  display: block
+  padding: 20px
+  margin-bottom: 30px
+  &::after
+   height: 30px
+ .antreibt-boxs_descr
+  margin-top: 30px
+ .antreibt-boxs_img
+  width: 100%
+  height: 170px
+  margin-top: 30px
+  margin-left: 0px
+ .antreibt-team
+  grid-template-columns: 1fr
+ .antreibt-team_point
+  padding: 20px
+ .antreibt-list
+  grid-template-columns: 1fr
+  grid-column-gap: 20px
+  grid-row-gap: 20px
+  &:before
+   left: 20%
+   height: 50%
+ .antreibt-list_point
+  padding: 20px
+ .antreibt-list_descr
+  margin-top: 30px
+ .antreibt-contacts_img
+  height: 210px
+  margin-bottom: 20px
+ .antreibt-search
+  top: 20px
+  left: 20px
+  width: calc(100% - 40px)
+ .antreibt-tabs_list
+  grid-template-columns: 1fr
+ .antreibt-adress
+  margin-top: 20px
+ .antreibt-adress_title
+  width: 100%
+ .antreibt-adress_date
+  position: static
+  display: block
+  width: fit-content
+  margin-top: 20px
+ .antreibt-info
+  padding: 20px
+ .antreibt-center
+  padding: 20px
+ .antreibt-logos
+  grid-template-columns: 1fr 1fr
+ .antreibt-logos_point
+  width: 227px
+  height: 227px
+  grid-template-columns: 1fr 1fr
+ .antreibt-people
+  grid-template-columns: 1fr
+ .antreibt-people_point
+  display: block
+ .antreibt-people_img
+  margin-right: 0px
+  margin-bottom: 20px
+@media (max-width: 500px)
+ .antreibt-img
+  position: relative
+  left: -15px
+  width: calc(100% + 30px)
+ .antreibt-contacts_img
+  position: relative
+  left: -15px
+  width: calc(100% + 30px)
+ .antreibt-map
+  left: -15px
+  width: calc(100% + 30px)
+ .antreibt-search
+  left: 15px
+  top: 15px
+  width: calc(100% - 30px)
+ .antreibt-tabs
+  position: relative
+  left: -15px
+  width: calc(100% + 30px)
+  padding: 20px 15px
+  margin-top: 0px
+ .antreibt-logos_point
+  width: 43.400vw
+  height: 43.400vw
+  img
+   max-height: 70px
+   max-width: 70px
+@media (min-width: 1200px)
+ .antreibt-contacts_contact a:hover
+  color: #B91C3B
+ .antreibt-adress_title:hover
+  color: #DEA827
+ .antreibt-adress_list a:hover
+  color: #DEA827
+ .antreibt-tabs_name:hover
+  background: #707070
+ .antreibt-info a:hover
+  color: #B91C3B
+ .antreibt-center_descr a:hover
+  color: #B91C3B
+ .antreibt-people_title:hover
+  color: #DEA827
+ .antreibt-people_list a:hover
+  color: #DEA827
+/*-antreibt*/

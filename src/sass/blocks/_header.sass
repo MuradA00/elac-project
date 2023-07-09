@@ -1,0 +1,178 @@
+/*header*/
+.header
+ position: absolute
+ left: 0
+ top: 0
+ width: 100%
+ padding: 15px 0px
+.header-wrap
+ display: flex
+ align-items: center
+.header-logo
+ display: flex
+ justify-content: center
+ align-items: center
+ width: 82px
+ height: 82px
+ margin-right: 63px
+ background: #B91C3B
+ img
+  width: 100%
+  height: 100%
+.header-nav
+ display: flex
+ align-items: center
+.header-menu
+ display: flex
+ align-items: center
+ margin-right: 95px
+ > li
+  position: relative
+  margin-right: 35px
+ > li:last-child
+  margin-right: 0px
+ > li > a
+  font-size: 23px
+  color: #707070
+.header-menu_arrow
+ display: none
+.header-sublist
+ position: absolute
+ left: 0
+ top: 100%
+ padding: 10px
+ border-radius: 10px
+ background: #FFFFFF
+ box-shadow: 3px 3px 7px rgb(0 0 0 / 16%)
+ display: none
+ li 
+  margin-bottom: 5px
+ li:last-child 
+  margin-bottom: 0px
+ a 
+  display: block
+  font-weight: 400
+  font-size: 16px
+  line-height: 24px
+  color: #707070
+  white-space: nowrap
+.header-link
+ display: flex
+ align-items: center
+ font-size: 20px
+ color: #FFFFFF
+ svg
+  fill: #FFFFFF
+  margin-left: 20px
+.header-burger
+ position: relative
+ z-index: 2
+ display: none
+ flex-direction: column
+ justify-content: space-between
+ align-items: flex-end
+ width: 34px
+ height: 20px
+ cursor: pointer
+ transition: 0.2s
+ span
+  display: block
+  height: 2px
+  width: 100%
+  background: #FFFFFF
+  transition: 0.2s
+.header-burger.active
+ transform: translateX(5px)
+ span
+  background: #B91C3B
+ span:nth-child(1)
+  transform: rotate(45deg) translate(6px, 6px)
+ span:nth-child(2)
+  opacity: 0
+ span:nth-child(3)
+  transform: rotate(-45deg) translate(6px, -7px)
+@media (max-width: 1200px)
+ .header
+  position: fixed
+  z-index: 10
+  padding: 10px 0px
+  transition: 0.1s
+ .header.active
+  background: #B91C3B
+ .header-wrap
+  justify-content: space-between
+ .header-logo
+  width: 60px
+  height: 60px
+ .header-nav
+  position: fixed
+  z-index: -1
+  left: 0
+  top: 0
+  display: none
+  width: 100%
+  height: 100%
+  background: #FFFFFF
+  padding-top: 100px
+  padding-bottom: 30px
+  overflow: auto
+ .header-menu
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  margin-right: 0px
+  > li
+   display: flex 
+   align-items: center
+   justify-content: center
+   flex-wrap: wrap
+   margin-right: 0px
+   margin-bottom: 30px
+  > li > a 
+   font-size: 20px
+ .header-menu_arrow
+  display: block
+  width: 24px
+  height: 24px
+  background: url('../icons/elements/arrow-2.svg') center no-repeat
+  background-size: contain
+  margin-left: 15px
+  transition: 0.2s
+ .header-menu_arrow.active 
+  transform: rotate(-180deg)
+ .header-sublist
+  position: static
+  display: none
+  width: 100%
+  padding: 0px
+  border-radius: 0px
+  box-shadow: none
+  background: transparent
+  box-shadow: none
+  margin-top: 15px
+  li 
+   margin-bottom: 15px
+  a 
+   text-align: center
+ .header-link
+  color: #B91C3B
+  width: fit-content
+  margin: 0 auto 0px auto
+  svg
+   fill: #B91C3B
+ .header-burger
+  display: flex
+@media (min-width: 1200px)
+ .header-menu > li > a:hover
+  color: #B91C3B
+ .header-menu > li:hover > a 
+  color: #B91C3B
+ .header-menu > li:hover > ul 
+  display: block
+ .header-link:hover
+  color: #DEA827
+  svg
+   fill: #DEA827
+ .header-sublist a:hover 
+  color: #B91C3B
+/*-header*/

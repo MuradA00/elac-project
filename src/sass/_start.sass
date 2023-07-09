@@ -1,0 +1,69 @@
+/*start*/
+.start-slider 
+ overflow: visible
+ min-height: 500px
+.start-slide 
+ display: flex
+ justify-content: space-between
+ align-items: flex-start
+ opacity: 0!important
+.start-slide.swiper-slide-active 
+ opacity: 1!important
+.start-slide_text
+ width: 47%
+ .section-title 
+  color: #454545
+ .btn-one 
+  margin-top: 35px
+.start-slide_img
+ width: 52%
+ height: 550px
+ img 
+  object-fit: cover
+  width: 100%
+  height: 100%
+.start-pagination 
+ position: absolute
+ width: 52%!important
+ left: auto!important
+ right: 0!important
+ bottom: auto!important
+ top: 570px
+@media (max-width: 1200px)
+ .start-slide
+  flex-direction: column 
+  align-items: flex-start 
+  justify-content: start
+ .start-slide_img
+  order: 0
+  width: 100%
+  height: 370px
+  margin-bottom: 30px
+ .start-pagination
+  width: 100%!important
+  bottom: auto!important 
+  top: 330px!important 
+ .start-slide_text
+  position: static
+  order: 1
+  width: 100%
+  max-width: 100%
+  .section-descr
+   max-width: 100%
+  .btn-one 
+   margin-top: 30px
+@media (max-width: 800px)
+ .start
+  margin-top: -30px
+ .start-slide_img
+  height: 210px
+  margin-bottom: 20px
+ .start-pagination
+  top: 180px!important 
+@media (max-width: 500px)
+ .start-slider 
+  width: calc(100% + 30px)
+  left: -15px
+ .start-slide_text 
+  padding: 0px 15px
+/*-start*/

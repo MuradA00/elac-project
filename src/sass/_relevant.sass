@@ -1,0 +1,101 @@
+/*relevant*/
+.relevant-item
+ width: 100%
+ padding: 30px
+ background: #FFFFFF
+ box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.160784)
+ border-radius: 20px
+.relevant-item_img
+ display: flex
+ justify-content: center
+ align-items: center
+ height: 205px
+ width: 100%
+ overflow: hidden
+ img
+  width: 100%
+  height: 100%
+  object-fit: cover
+  transition: 0.3s
+.relevant-item_title
+ display: -webkit-box
+ -webkit-line-clamp: 2
+ -webkit-box-orient: vertical
+ height: 54px
+ overflow: hidden
+ margin-top: 20px
+ transition: 0.15s
+.relevant-item_descr
+ display: -webkit-box
+ -webkit-line-clamp: 3
+ -webkit-box-orient: vertical
+ height: 69px
+ overflow: hidden
+ margin-top: 20px
+.relevant-item_btn
+ margin: 20px 0px 0px auto
+.relevant
+ .container
+  position: relative
+.relevant-bgr
+ content: ''
+ position: absolute
+ z-index: -1
+ bottom: 0
+ left: calc(100% - 685px)
+ height: 380px
+ width: 2000px
+ background: #B91C3B
+.relevant-list
+ display: grid
+ grid-template-columns: 1fr 1fr 1fr
+ grid-column-gap: 40px
+ grid-row-gap: 40px
+.relevant-slider 
+ left: -15px
+ width: calc(100% + 30px)
+ padding: 0px 15px
+ overflow-y: visible
+ overflow-x: clip
+.relevant-pagination
+ display: flex 
+ justify-content: center
+ align-items: center
+ margin-top: 40px
+.relevant-bottom
+ padding: 70px 0px 70px 50%
+@media (max-width: 1200px)
+ .relevant-bgr 
+  left: calc(100% - 490px)
+ .relevant-list
+  grid-template-columns: 1fr 1fr 
+  grid-row-gap: 30px 
+  grid-column-gap: 30px
+ .relevant-bottom
+  display: flex 
+  justify-content: flex-end
+  padding: 20px 0px
+@media (max-width: 800px)
+ .relevant-item
+  padding: 20px
+ .relevant-item_title
+  height: 51px
+ .relevant-item_img
+  height: 190px
+ .relevant-bgr
+  left: 20% 
+  height: 400px
+ .relevant-list
+  grid-template-columns: 1fr
+ .relevant-bottom
+  align-items: center 
+  height: 78px
+  padding: 0px
+ .relevant-link
+  max-width: 200px
+@media (min-width: 1200px)
+ .relevant-item_img:hover img
+  transform: scale(1.05)
+ .relevant-item_title:hover
+  color: #B91C3B
+/*-relevant*/

@@ -1,0 +1,28 @@
+.chat-modal 
+    position: fixed
+    z-index: 10
+    bottom: 18px
+    right: 48px
+    background: #fff
+    border-radius: 14px
+    box-shadow: 3px 3px 14px rgba(0, 0, 0, 0.16)
+    padding: clamp(32px, 3.375vw, 54px) 24px
+    &__inner
+        display: flex
+        align-items: center
+        grid-gap: 20px
+
+        p 
+            max-width: 200px
+
+            font-size: 17px
+            color: var(--gr-clr)
+            line-height: 140%
+
+@media only screen and ( max-width: 800px )
+    .chat-modal 
+        right: 15px
+        padding: 26px 16px
+
+.chat-modal.active 
+    display: block            

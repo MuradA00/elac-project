@@ -1,0 +1,95 @@
+/*content*/
+.content
+ *:last-child
+  margin-bottom: 0px
+ h2
+  color: #707070
+  font-weight: 500
+  font-size: 35px
+  line-height: 45px
+  margin-bottom: 15px
+ h3
+  color: #707070
+  font-weight: 500
+  font-size: 22px
+  line-height: 27px
+  margin-bottom: 15px
+ h4
+  color: #707070
+  font-weight: 500
+  font-size: 17px
+  line-height: 23px
+  margin-bottom: 15px
+ p
+  color: #707070
+  font-weight: 400
+  font-size: 17px
+  line-height: 23px
+  margin-bottom: 20px
+ strong 
+  font-weight: 500
+ a 
+  display: inline-block
+  color: #DEA827
+  font-weight: 400
+  font-size: 17px
+  line-height: 23px
+ ul 
+  margin-bottom: 20px
+ ul li 
+  position: relative
+  color: #707070
+  font-weight: 400
+  font-size: 17px
+  line-height: 23px
+  padding-left: 20px
+  margin-bottom: 15px
+ ul li:last-child 
+  margin-bottom: 0px
+ ul li:before 
+  content: ''
+  position: absolute
+  left: 0
+  top: 7px
+  width: 8px
+  height: 8px
+  border-radius: 50% 
+  background: #DEA827
+ ol 
+  list-style: none
+  counter-reset: num
+  margin-bottom: 20px
+ ol li 
+  position: relative
+  color: #707070
+  font-weight: 400
+  font-size: 17px
+  line-height: 23px
+  padding-left: 20px
+  margin-bottom: 15px
+ ol li:before 
+  content: counter(num) "."
+  counter-increment: num
+  position: absolute
+  left: 0px
+  top: 0px
+  font-weight: 500
+  font-size: 17px
+  line-height: 23px
+  color: #DEA827
+ ol li:last-child 
+  margin-bottom: 0px 
+ img 
+  margin-bottom: 20px
+@media (max-width: 800px)
+ .content 
+  h2
+   font-size: 30px
+   line-height: 40px
+  h3 
+   font-size: 21px
+   line-height: 26px
+@media (min-width: 1200px)
+ .content a:hover 
+  color: #B91C3B
+/*-content*/

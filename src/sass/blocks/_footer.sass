@@ -1,0 +1,98 @@
+/*footer*/
+.footer-top
+ padding: 50px 0px
+ background: rgb(112, 112, 112, 0.1)
+.footer-wrap
+ display: flex
+.footer-contacts
+ min-width: 520px
+.footer-title
+ display: block
+.footer-adress
+ display: block
+ font-weight: 400
+ font-size: 17px
+ line-height: 23px
+ margin-top: 20px
+ b
+  font-weight: 500
+.footer-list
+ margin-top: 20px
+ li
+  display: flex
+  align-items: center
+  font-size: 17px
+  line-height: 23px
+  margin-bottom: 5px
+ li:last-child
+  margin-bottom: 0px
+ a
+  display: block
+  color: #DEA827
+  margin-left: 5px
+.footer-link
+ margin-top: 50px
+.footer-nav
+ display: grid
+ grid-template-columns: 1fr 1fr
+ grid-column-gap: 150px
+ grid-row-gap: 50px
+.footer-menu
+ margin-top: 20px
+ li
+  margin-bottom: 10px
+ li:last-child
+  margin-bottom: 0px
+ a
+  font-size: 17px
+  line-height: 21px
+  color: #707070
+.footer-bottom
+ background: #B91C3B
+ padding: 15px 0px
+.footer-links
+ display: flex
+ align-items: center
+ justify-content: flex-end
+ li
+  margin-right: 50px
+ li:last-child
+  margin: 0px
+ a
+  font-size: 17px
+  color: #FFFFFF
+@media (max-width: 1200px)
+ .footer-wrap
+  flex-direction: column
+ .footer-contacts 
+  margin-bottom: 50px
+ .footer-nav 
+  grid-column-gap: 50px 
+@media (max-width: 500px)
+ .footer-nav 
+  grid-template-columns: 1fr
+ .footer-link
+  margin-top: 20px
+ .footer-list.two
+  li 
+   flex-direction: column 
+   align-items: flex-start 
+   justify-content: flex-start
+  a 
+   font-size: 14px
+   margin-left: 0px
+   margin-top: 5px
+ .footer-adress
+  font-weight: 400
+  font-size: 10px
+  line-height: 16px
+ .footer-list li
+  font-size: 15px
+@media (min-width: 1200px)
+ .footer-list a:hover
+  color: #B91C3B
+ .footer-menu a:hover
+  color: #B91C3B
+ .footer-links a:hover 
+  color: #DEA827
+/*-footer*/

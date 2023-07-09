@@ -1,0 +1,103 @@
+.contact 
+    background-color: rgba(112, 112, 112, .1)
+    &-link 
+        margin-top: 86px
+        display: block
+        background-color: var(--r-clr)
+        padding: 12px 30px
+        width: fit-content
+
+        display: flex
+        align-items: center
+        justify-content: center
+        text-align: center
+
+        border-radius: 20px
+        span 
+            color: #fff !important
+
+            font-weight: 500
+            font-size: 20px
+    &-inner 
+        padding: clamp(32px, 3.375vw, 54px) 0
+    p 
+        font-size: 17px
+        font-weight: 400     
+        line-height: 140%  
+
+    &-bottom 
+        background-color: rgba(var(--pr-clr), 1)
+
+        padding: 16px 0
+
+        &__links 
+            display: flex
+            align-items: center
+            flex-wrap: wrap
+            justify-content: flex-end
+
+            grid-gap: 56px
+
+            a 
+                @extend p
+
+                color: #fff
+    &-links 
+        display: grid
+        grid-template-columns: repeat(2, auto)
+        justify-content: space-between
+        grid-gap: clamp(40px, 4.75vw, 76px) 18px
+        &__item 
+           a 
+            font-weight: 500
+            font-size: 22px
+
+            color: var(--gr-clr)
+            &:hover 
+                text-decoration: underline
+    &-info 
+        max-width: 408px
+        &__block 
+            a 
+                font-weight: 500
+                color: var(--r-clr)
+            span 
+                font-weight: 500
+            &:not(:last-child) 
+                margin-bottom: 10px
+                
+    &-grid 
+        display: flex
+        justify-content: space-between
+        &__col
+            &--links 
+                max-width: 486px
+                width: 100%
+            &-title 
+                font-size: 22px
+                font-weight: 500
+
+                margin-bottom: 16px
+
+
+@media only screen and (max-width: 1200px) 
+    .contact
+        &-info 
+            max-width: 100% 
+        &-grid 
+            grid-gap: 64px
+            flex-direction: column
+            &__col
+                max-width: 100%
+
+@media only screen and (max-width: 800px)
+    .contact 
+        &-bottom 
+            &__links 
+                justify-content: center
+                grid-gap: 28px
+
+@media only screen and (max-width: 550px) 
+    .contact 
+        &-links 
+            grid-template-columns: 100%                
