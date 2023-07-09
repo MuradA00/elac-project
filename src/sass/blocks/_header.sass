@@ -5,6 +5,40 @@
  top: 0
  width: 100%
  padding: 15px 0px
+ &-options 
+  display: flex
+  align-items: center
+  grid-gap: 38px
+
+  margin-left: auto  
+  &__user 
+    display: flex
+    align-items: center
+    grid-gap: 14px
+    position: relative
+    &-hidden 
+      position: absolute
+      background: red
+
+      display: none
+
+      padding: 20px 20px 40px 20px
+
+      width: 100%
+      top: 100%
+      left: -34px
+
+      padding-left: 34px
+      li 
+        a 
+          font-size: 18px
+          color: #fff
+        &:not(:last-child)        
+          margin-bottom: 28px
+    &-name 
+      color: #fff
+      font-size: 17px
+      font-weight: 500
 .header-wrap
  display: flex
  align-items: center
@@ -99,6 +133,8 @@
   transition: 0.1s
  .header.active
   background: #B91C3B
+ .header-personal.active 
+  background: rgba(var(--pr-clr), 1)
  .header-wrap
   justify-content: space-between
  .header-logo
@@ -176,3 +212,51 @@
  .header-sublist a:hover 
   color: #B91C3B
 /*-header*/
+
+.header 
+  &-personal 
+    z-index: 1
+    .header-burger 
+      span 
+        background: #dea827
+    .header-logo
+      margin-right: 38px
+    .header-menu
+      margin-right: 0
+      li 
+        margin-right: 28px
+      li a 
+        font-size: 18px  
+
+.wrapper-personal        
+  .wrapper-buttons_point 
+    background: rgba(var(--pr-clr), 1)
+
+.wrapper-bgr-personal 
+  .container:before
+    background: rgba(var(--pr-clr),1) 
+    height: 112px         
+    width: 462px
+    left: 75%
+
+.wrapper-bgr-personal.active .container:before
+  height: 450px
+
+  z-index: 1
+
+@media only screen and (max-width: 1200px)
+  .header-options 
+    display: none      
+    .wrapper-bgr-personal .container:before 
+      height: 80px    
+
+.header-personal .header-burger.active
+  span 
+    background: rgba(var(--pr-clr), 1)   
+    background: red        
+.header-options__user.active
+  .header-options__user-name
+    color: var(--r-clr) 
+  .header-options__user-hidden 
+    display: block    
+    background: rgba(var(--pr-clr), 1)

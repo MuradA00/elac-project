@@ -8,7 +8,6 @@
 *.sublime*
 build/
 dist/
-config
 docs/
 node_modules/
 npm-debug.*
